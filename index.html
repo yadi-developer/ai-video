@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Artifical Intelegent Test @Yadi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>-->
+    <!--[> Load the coco-ssd model. <]-->
+    <!--script-->
+    <!--defer-->
+    <!--src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"-->
+    <!--</script>-->
+    <!-- Make sure your page supports utf-8 characterset. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Load TensorFlow.js. This is required to use the qna model. -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Load the qna model. -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"
+    ></script>
+    <!-- Load the coco-ssd model. -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"
+    ></script>
+
+    <!-- Place your code in the script tag below. You can also use an external .js file -->
+
+    <script defer src="//cdn.jsdelivr.net/npm/eruda"></script>
+
+    <script defer src="./video.js"></script>
+  </head>
+
+  <style type="text/css">
+    video,
+    canvas {
+      position: fixed;
+      top: 150;
+      left: 150;
+    }
+  </style>
+  <body>
+    <video height="720" width="600" id="video" autoplay muted></video>
+    <canvas height="720" width="600" id="canvas"> </canvas>
+  </body>
+</html>
